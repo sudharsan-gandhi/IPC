@@ -9,9 +9,15 @@ JAVA
 ## Run the code
 
 ```
-cd IPC/semaphores change to semaphores directory
+ #change to semaphores directory
+cd IPC/semaphores
+
 #to compile all the java classes in MAIN.java
-javac *.java #now you should see .class files in the folder
+
+javac *.java 
+
+#now you should see .class files in the folder
+
 # to run the Main class
 java Main
 ```
