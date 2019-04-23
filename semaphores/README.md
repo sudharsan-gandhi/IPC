@@ -8,6 +8,8 @@ JAVA
 
 ## Run the code
 
+Note: change the filepath in code before proceeding example: "C:semaphores.txt" which will hold the saved data
+
 ```
  #change to semaphores directory
 cd IPC/semaphores
