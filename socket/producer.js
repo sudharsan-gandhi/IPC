@@ -6,13 +6,13 @@ let buffer_array = [];
 let i = 0;
 
 while (i < 100) {
-    buffer_array.push(Buffer.from(Math.random().toString()));
+    buffer_array.push(Buffer.from(Math.floor((Math.random()*100)).toString()));
     i++;
 };
 
 client.send(buffer_array, PORT, HOST, function(err, bytes) {
     if (err) throw err;
-    console.log(`sending 100 random numbers ${HOST}:${PORT}`);
+    console.log(`sending 100 random numbers ${buffer_array.join(',')} ${HOST}:${PORT}`);
     client.close();
 });
 

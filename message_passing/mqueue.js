@@ -37,7 +37,7 @@ function receiveMessage() {
 // adding values to redis queue
 function sendMessage() {
     if(i < 100)
-    rsmq.sendMessage({ qname: queueName, message: Math.random().toString() })
+    rsmq.sendMessage({ qname: queueName, message: (Math.floor((Math.random()*100))).toString() })
         .then(result => {
             console.log("Message id", result);
                 i++;
